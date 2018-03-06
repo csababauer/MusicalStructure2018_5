@@ -8,7 +8,4 @@
     tools:context="com.example.csaba.musicalstructure2018_5.MainActivity"
     android:id="@+id/list"
     >
-
-
-
 </ListView>

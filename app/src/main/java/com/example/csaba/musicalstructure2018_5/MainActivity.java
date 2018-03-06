@@ -3,16 +3,11 @@ package com.example.csaba.musicalstructure2018_5;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.Cursor;
-import android.media.MediaPlayer;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -71,9 +66,6 @@ public class MainActivity extends AppCompatActivity {
                 counter += 1;                                                                      //add +1
                 String counterAfter = String.valueOf(counter);                                     //make counter a String again
                 adapter.getItem(position).setSongPlayed(counterAfter);                             //use setSongPlayed method to set counter with the new value
-
-                //Toast.makeText(MainActivity.this, counterTwo, Toast.LENGTH_SHORT).show();
-
 
                 startActivity(intent);
             }
